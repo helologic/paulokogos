@@ -1,0 +1,115 @@
+:root{
+    --cor-de-fundo> linear-gradient(top:#FFF562);
+    --cor-texto:#000000;
+    --botao-ativo:#B04E00;
+    --botao-inativo:#DE690D;
+    --texto-simples:#FFFFFF;
+
+
+}
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+.botao{
+    color: var(--texto-simples);
+    background-color: var(--botao-inativo);
+    border-color: var(--botao-ativo);
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    align-self: auto;
+    padding: 1em;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid va(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+
+.botao:first-child{
+  border-radius: 40px 40px 0px 0px;
+}
+
+.botoes{
+ display: block;
+}
+
+.ativo{
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--cor-texto);
+}
+
+@media screen and (min-width: 768px){
+  .botoes{
+    display: flex;
+  }
+
+  .botao:first-child{
+    border-radius: 40px 0px 0px 0px;
+  }
+
+  .botao:last-child{
+    border-radius: 0px 40px 0px 0px;
+  }
+  
+}
+
+.titulo-principal{
+
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+    background-image: #000000;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.abas-textos{
+  background-color: var(--cor-de-fundo);
+  padding: 40px;
+  border-radius: 00 40px 40px;
+  }
+  .aba-conteudo.ativo{
+  display: block;
+  }
+  .aba-conteudo{
+  display: none;
+  }
+  .aba-conteudo-titulo-principal{
+  font-size: 28px;
+  text-align: center;
+  }
+  .aba-conteudo-titulo-secundario{
+  text-align: center;
+  color: var(--rosa);
+  text-transform: uppercase;
+  }
